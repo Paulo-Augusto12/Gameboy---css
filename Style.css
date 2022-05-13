@@ -1,0 +1,139 @@
+body{
+    background: aquamarine;
+}
+
+.gameboy{
+    position: relative;
+    top: 15% ;
+    margin:0px auto ;
+    height: 450px;
+    width: 250px;
+    background: 	#C0C0C0;
+    border-radius: 10px 10px 30px 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px rgba(0 , 0 , 0 , 1);
+
+}
+
+.screen{
+position: absolute ;
+width: 226px ;
+height: 185px ;
+left: 12px ;
+top: 20px ;
+background: #0A1A7D ;
+border-radius: 5px 5px 20px 5px ;
+}
+
+.screen:before {
+    position: absolute;
+    width: 180px ;
+    height: 150px ;
+    left:  23px ;
+    top: 13px ;
+    background-color: #777 ;
+    box-shadow: inset 2px 2px rgba(0 , 0 , 0 , 1);
+    content: "";
+}
+
+.components{
+    position: absolute;
+    width: 13px ;
+    height: 40px ;
+    top: 300px ;
+    left: 45px ;
+    background: #0A1A7D ;
+    border-radius: 3px ;
+    z-index: 998;
+
+}
+
+#blink{
+    position: relative;
+    margin: 0px auto ;
+    height: 5px ;
+    width: 5px;
+    top: -15%;
+    left: -52px;
+    border-radius: 100% ;
+    box-shadow: 1px 1px 0 #400 inset;
+    background: #600;
+    content: "";   
+}
+
+.gameboy{
+    background: #FF8C00;
+}
+
+.components:after {
+    position: absolute;
+    width : 40px ; 
+    height: 13px;
+    top: 13px;
+    left: -13px ;
+    background: #0A1A7D;
+    border-radius: 13px;
+    content: "";
+    z-index: 1000;
+}
+
+.btn{
+    position: absolute;
+    width: 50px ;
+    height: 50px;
+    top: 295px;
+    left: 27px;
+    background:whitesmoke ;
+    border-radius: 100%;
+}
+.btn:before{
+    position: absolute;
+    width: 25px ;
+    height: 50px;
+    left: 150px;
+    background: green ;
+    border-radius: 12px ;
+    transform: rotate(45deg);
+    content: "" ;
+}
+
+.btn:after{
+    position: absolute;
+    height:  20px ;
+    width: 3px ;
+    top: 80px ;
+    left: 150px;
+    border-radius: 2px ;
+    background: whitesmoke ;
+    transform: rotate(-45deg);
+    box-shadow: 7px 0px whitesmoke,
+                 7px 0px whitesmoke,
+                 14px 0px whitesmoke, 
+                 21px 0px whitesmoke,
+                 28px 0px whitesmoke,
+                 35px 0px whitesmoke;
+     content: "";            
+} 
+.btn1{
+    position: absolute;
+    height: 18px ;
+    width: 18px ;
+    top: 320px ;
+    right: 61px ;
+    border-radius: 100% ;
+    background: yellow ;
+    box-shadow: 18px -18px yellow ;
+}
+
+.btn2{
+    position: absolute;
+    height:  25px;
+    width: 6px;
+    bottom: 15px;
+    left: 55px;
+    background: whitesmoke;
+    border-radius: 3px;
+    transform: rotate(45deg);
+    box-shadow: 17px -17px whitesmoke;
+
+}
